@@ -1,0 +1,54 @@
+---
+title: "Exchange Rate Determination"
+author: "Akash"
+institute: "MRIIRS"
+format: dashboard
+titlepage: true
+titlepage-full: true
+---
+
+---
+
+# Graph
+
+## Section-1{height=40%}
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(bslib)
+library(bsicons)
+data<-mtcars
+p1<-ggplot(data,aes(mpg,wt,colour = mpg,size=gear))+geom_point()
+ggplotly(p1)
+```
+
+```{r}
+ggplotly(p1)
+```
+
+## Section-2 {.tabset}  
+
+### Tab-1
+
+```{r}
+ggplotly(p1)
+```
+
+### Tab-2
+
+```{r}
+ggplotly(p1)
+```
+
+## Section-3
+###
+The graph compares miles per gallon (mpg) against weight (wt) across different ranges. The values span mpg from about 10 to 35 and weight from 2 to 5. Two tabs of data are referenced (Tab‑1 and Tab‑2)
+
+###
+Now it is a real test 
+
+# Tables
+
+# Summary
